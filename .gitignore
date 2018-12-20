@@ -36,3 +36,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+
+# yalc
+.yalc
+yalc.lock

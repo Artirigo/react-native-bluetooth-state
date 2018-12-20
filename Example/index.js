@@ -1,19 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-
+/** @format */
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import BluetoothState from 'react-native-bluetooth-state';
 
-class Example extends Component {
+import { name as appName } from './app.json';
+
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,12 +24,8 @@ class Example extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          What is my bluetooth state?
-        </Text>
-        <Text style={styles.instructions}>
-          {this.state.bluetooth}
-        </Text>
+        <Text style={styles.welcome}>What is my bluetooth state?</Text>
+        <Text style={styles.instructions}>{this.state.bluetooth}</Text>
       </View>
     );
   }
@@ -62,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Example', () => Example);
+AppRegistry.registerComponent(appName, () => App);

@@ -18,8 +18,13 @@
     "bluetooth",
     "bluetooth-state"
   ],
+  "scripts": {
+    "yalc": "yalc"
+  },
   "main": "BluetoothState.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "yalc": "^1.0.0-pre.25"
+  },
   "peerDependencies": {
     "react-native": ">=0.40.0"
   }
